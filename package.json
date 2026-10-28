@@ -1,0 +1,49 @@
+{
+  "name": "mes-quotas-antigravity",
+  "displayName": "Mes quotas Antigravity",
+  "description": "Affiche le quota restant de plusieurs comptes Google dans Antigravity IDE, sans changer de compte.",
+  "version": "0.2.0",
+  "publisher": "swann-local",
+  "engines": { "vscode": "^1.80.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./src/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "mesQuotasContainer",
+          "title": "Mes quotas",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "mesQuotasContainer": [
+        {
+          "type": "webview",
+          "id": "mesQuotas.panel",
+          "name": "Comptes Google"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "mesQuotas.connecterCompte",
+        "title": "Mes quotas : connecter un compte Google"
+      },
+      {
+        "command": "mesQuotas.rafraichir",
+        "title": "Mes quotas : rafraîchir les quotas"
+      },
+      {
+        "command": "mesQuotas.supprimerCompte",
+        "title": "Mes quotas : déconnecter un compte"
+      },
+      {
+        "command": "mesQuotas.ouvrirNavigateur",
+        "title": "Mes quotas : ouvrir dans le navigateur"
+      }
+    ]
+  }
+}

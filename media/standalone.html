@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mes quotas Antigravity</title>
+<link rel="stylesheet" href="/standalone.css">
+</head>
+<body>
+  <header>
+    <h1>Mes quotas Antigravity</h1>
+    <div class="actions">
+      <span id="statut-maj" class="statut-maj"></span>
+      <label class="auto"><input type="checkbox" id="auto-refresh" checked> Auto (30 s)</label>
+      <button id="btn-rafraichir">Rafraîchir</button>
+    </div>
+  </header>
+
+  <section class="meilleur">
+    <label for="sel-modele">Meilleur compte pour :</label>
+    <select id="sel-modele"></select>
+    <div id="meilleur-liste" class="meilleur-liste"></div>
+  </section>
+
+  <main id="grille" class="grille"></main>
+
+  <p class="note">Accessible uniquement depuis ce PC (127.0.0.1), tant que cette instance d'Antigravity reste ouverte.</p>
+
+  <script src="/standalone.js"></script>
+</body>
+</html>

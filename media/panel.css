@@ -1,0 +1,33 @@
+body { font-family: var(--vscode-font-family); font-size: 13px; color: var(--vscode-foreground); padding: 8px; }
+.barre { display: flex; gap: 6px; margin-bottom: 10px; }
+button {
+  background: var(--vscode-button-background); color: var(--vscode-button-foreground);
+  border: none; border-radius: 4px; padding: 4px 8px; cursor: pointer; font-size: 12px;
+}
+button:hover { background: var(--vscode-button-hoverBackground); }
+#btn-plein-ecran { margin-left: auto; flex: 0 0 auto; }
+.compte { border: 1px solid var(--vscode-widget-border, #3334); border-radius: 6px; padding: 8px; margin-bottom: 8px; }
+.compte-entete { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 6px; }
+.compte-email { font-weight: 600; }
+.compte-palier { font-size: 11px; opacity: 0.7; }
+.supprimer { cursor: pointer; opacity: 0.6; font-size: 11px; }
+.supprimer:hover { opacity: 1; }
+.modele { display: flex; justify-content: space-between; align-items: center; padding: 3px 0; font-size: 12px; gap: 6px; }
+.modele-nom { flex: 0 0 auto; max-width: 48%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.jauge { flex: 1; height: 7px; background: var(--vscode-progressBar-background, #3333); border-radius: 3px; overflow: hidden; min-width: 30px; }
+.jauge-remplie { height: 100%; }
+.ok { background: #3fb950; }
+.bas { background: #d29922; }
+.vide { background: #f85149; }
+.pct { width: 34px; text-align: right; opacity: 0.85; flex: 0 0 auto; font-variant-numeric: tabular-nums; }
+.reset { font-size: 10px; opacity: 0.6; flex: 0 0 auto; white-space: nowrap; }
+.erreur { color: #f85149; font-size: 11px; }
+.vide-etat { opacity: 0.6; text-align: center; padding: 20px 8px; }
+.verifie { font-size: 10px; opacity: 0.5; margin-top: 6px; }
+.toggle-autres {
+  font-size: 11px; opacity: 0.7; cursor: pointer; padding: 4px 0 2px; user-select: none;
+  border-top: 1px dashed var(--vscode-widget-border, #3334); margin-top: 4px;
+}
+.toggle-autres:hover { opacity: 1; }
+.autres-modeles { display: none; }
+.autres-modeles.ouvert { display: block; }
